@@ -8,7 +8,7 @@
 require 'faker'
 
 100.times do
-    dog = Dog.create(dog_name: Faker::Name.unique.first_name)
+    dog = Dog.create(dog_name: Faker::Creature::Dog.breed)
     end
 
     100.times do 
